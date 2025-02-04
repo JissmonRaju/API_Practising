@@ -4,11 +4,11 @@ from StudApp.models import Student
 class StudentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Student
-        fields = {
+        fields = [
             'StudId',
             'Name',
             'Place',
             'Course',
             'Address',
             'Age'
-        }
+        ]
